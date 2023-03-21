@@ -1,7 +1,4 @@
 {
-    "cmake.environment": {
-        "PICO_INSTALL_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0",
-    },
     "cmake.statusbar.advanced": {
         "debug": {
             "visibility": "hidden"
@@ -20,18 +17,14 @@
     "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
     "cmake.cmakePath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\cmake\\bin\\cmake.exe",
-    "cmake.configureEnvironment": {
-        "OPENOCD_SCRIPTS": "${config:cmake.environment.PICO_INSTALL_PATH}\\openocd\\scripts",
-        "PICO_INSTALL_PATH": "${config:cmake.environment.PICO_INSTALL_PATH}",
-        "PICO_SDK_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\pico-sdk\\",
-        "PICO_SDK_VERSION": "1.5.0",
-        "PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\picotool;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\pico-sdk-tools;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\git\\cmd;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\python;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\ninja;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\gcc-arm-none-eabi\\bin;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.00\\cmake\\bin;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\openocd;{$env:PATH}",
+    "cmake.environment": {
+        "PICO_INSTALL_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0",
     },
     
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 
-    "cortex-debug.openocdPath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\openocd\\openocd.exe",
-    "cortex-debug.gdbPath":"C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gdb.exe",
-    "cortex-debug.armToolchainPath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\gcc-arm-none-eabi\\bin\\",
+    "cortex-debug.openocdPath": "${config:cmake.environment.PICO_INSTALL_PATH}\\openocd\\openocd.exe",
+    "cortex-debug.gdbPath":"${config:cmake.environment.PICO_INSTALL_PATH}\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gdb.exe",
+    "cortex-debug.armToolchainPath": "${config:cmake.environment.PICO_INSTALL_PATH}\\gcc-arm-none-eabi\\bin\\",
     
 }
