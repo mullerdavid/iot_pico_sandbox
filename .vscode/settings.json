@@ -21,8 +21,8 @@
     "cmake.generator": "Ninja",
     "cmake.cmakePath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\cmake\\bin\\cmake.exe",
     "cmake.configureEnvironment": {
-        "OPENOCD_SCRIPTS": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\openocd\\scripts",
-        "PICO_INSTALL_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0",
+        "OPENOCD_SCRIPTS": "${config:cmake.environment.PICO_INSTALL_PATH}\\openocd\\scripts",
+        "PICO_INSTALL_PATH": "${config:cmake.environment.PICO_INSTALL_PATH}",
         "PICO_SDK_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\pico-sdk\\",
         "PICO_SDK_VERSION": "1.5.0",
         "PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\picotool;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\pico-sdk-tools;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\git\\cmd;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\python;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\ninja;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\gcc-arm-none-eabi\\bin;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.00\\cmake\\bin;C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\openocd;{$env:PATH}",
