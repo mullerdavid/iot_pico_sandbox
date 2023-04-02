@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.13)
 
 # Pull in PICO SDK (must be before project)
-include(pico_sdk_import.cmake)
+include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-project(sandbox C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
@@ -26,6 +25,7 @@ add_compile_options(-Wall
         )
 
 # Project files
+project(sandbox C CXX ASM)
 
 add_executable(main
     src/main.c
