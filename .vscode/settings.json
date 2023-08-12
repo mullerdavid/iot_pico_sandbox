@@ -16,9 +16,9 @@
     "cmake.buildBeforeRun": true,
     "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
-    "cmake.cmakePath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0\\cmake\\bin\\cmake.exe",
+    "cmake.cmakePath": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.1\\cmake\\bin\\cmake.exe",
     "cmake.environment": {
-        "PICO_INSTALL_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.0",
+        "PICO_INSTALL_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.1",
     },
     
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
