@@ -15,3 +15,7 @@ Open the folder. Install the recommended extensions.
 Cmake is automatically configuring the project on open after the extension is installed.
 If the Kit is not selected, select Pico ARM GCC (don't use builtin GCC).
 
+## Pico W
+Use the cmake-kits-pico_w.json file.
+
+
